@@ -65,7 +65,13 @@ public class GenericsDemo {
 		sum = sumOfList(fList);
 		System.out.println(sum);
 		
-		Integer i = 123;
+		Integer i = 123; // Integer i = new Integer(123);
+		int iPrim = i; // int iPrim = i.intValue();
+		
+		iPrim++;
+		
+		i++; // i = new Integer(i.intValue()++)
+		
 		Float f = 234f;
 		
 		Number n = f;
